@@ -1,0 +1,9 @@
+<p>Reddit Post</p>
+<input type="text" id="Title" />
+
+<button (click) ="GetReddit()">Search Reddit Post</button>
+
+<div *ngIf="reddit">
+<p>Title: {{reddit.title}}</p>
+<img src="{{reddit.gallery_data}}"/>
+</div>
